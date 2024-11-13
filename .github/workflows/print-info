@@ -1,0 +1,16 @@
+name: Print Info
+
+on:
+  push:
+    paths:
+      - file.txt
+
+jobs:
+  display-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Name, Last Name, and Hobby
+        run: |
+          echo "Nombre: Staniek"
+          echo "Apellido: Vasquez"
+          echo "Hobby: Programar"
