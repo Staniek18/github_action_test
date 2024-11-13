@@ -8,9 +8,13 @@ on:
 jobs:
   display-info:
     runs-on: ubuntu-latest
+    env:
+      NAME: Staniek
+      LAST_NAME: Vasquez
+      HOBBY: Programar
     steps:
       - name: Print Name, Last Name, and Hobby
         run: |
-          echo "Nombre: Staniek"
-          echo "Apellido: Vasquez"
-          echo "Hobby: Programar"
+          echo "Nombre: $NAME"
+          echo "Apellido: $LAST_NAME"
+          echo "Hobby: $HOBBY"
